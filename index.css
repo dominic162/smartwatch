@@ -1,0 +1,119 @@
+body{
+    margin: 0 0;
+    padding: 0 0;
+}
+header{
+    margin: 0 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(39, 19, 77);
+    position: sticky;
+    top: 0;
+}
+div{
+    margin:0 0;
+    padding: 0 0;
+}
+#mainContent{
+    margin:0 0;
+    padding: 0 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+}
+#watchImage{
+    width: 500px;
+    height:500px;
+    background-image: url('images/black.JPG');
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+#content{
+    width: 100%;
+    height:100%;
+    color:rgb(214, 212, 212);
+    font-size: xx-large;
+    align-content: center;
+}
+#watchDetails{
+    width:55%;
+    height:100%;
+    margin-top:10px;
+    margin-right: 0;
+    margin-left: 15px;
+}
+p{
+    margin: 10px 0 0 10px;
+    font-size:19px;
+    font-family:sans-serif;
+}
+.extra{
+    font-size: 22px;
+}
+#heading{
+    font-size: 40px;
+    font-weight: 500;
+}
+button{
+    font-size: 20px;
+    width:100px;
+    height: 50px;
+    margin: 10px 10px 20px 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 4px 8px;
+    cursor:pointer;
+    outline: none;
+}
+button:hover{
+    animation-name: increase;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#buyNow{
+    background-color: rgb(250, 190, 61);
+}
+.extraButton:hover{
+    animation-name: buy;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1s;
+}
+#info{
+    margin-bottom: 30px;
+}
+.extraButton{
+    background-color: rgb(218, 228, 238);
+    width: auto;
+}
+#black{
+    background-color: rgb(53, 51, 51);
+}
+#blue{
+    background-color: rgb(101, 60, 214);
+}
+#orange{
+    background-color: rgb(255, 77, 6);
+}
+#pink{
+    background-color:rgb(255, 192, 203);
+}
+#purple{
+    background-color:rgb(158, 68, 158);
+}
+@keyframes buy{
+    0%{
+        background-color:white;
+    }
+    100%{
+        background-color:lightgreen;
+        transform: scale(1.3,1.3);
+    }
+}
+@keyframes increase{
+    100%{
+        transform:scale(1.3,1.3);
+    }
+}
